@@ -64,6 +64,40 @@
     }
   </style>
   <script src="https://assets.adobedtm.com/180687984d6e/8804e11f0df2/launch-78a95eb539b3-development.min.js" async></script>
+  <!-- Data Layer (digitalData object) -->
+    <script>
+        var digitalData = {
+            "page": {
+                "pageInfo": {
+                    "pageName": "Homepage",
+                    "url": window.location.href,
+                    "referrer": document.referrer,
+                    "siteSection": "Home",
+                    "server": window.location.hostname
+                },
+                "category": {
+                    "primaryCategory": "Home"
+                }
+            },
+            "user": {
+                "profile": [{
+                    "profileInfo": {
+                        "userID": "guest",
+                        "email": "test1@test.com",
+                        "loginStatus": "false",
+                        "crmId":"gs2"
+                    }
+                }]
+            },
+            "cart": {
+                "cartID": "",
+                "cartTotal": 0,
+                "product": []
+            }
+            // Add more data as needed for your specific use cases
+        };
+    </script>
+    <!-- /Data Layer -->
 </head>
 <body>
 
